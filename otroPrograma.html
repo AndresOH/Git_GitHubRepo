@@ -1,0 +1,20 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+        // Define una función
+   
+        var pantalla = document.querySelector("canvas"); // metodo para llamar el canvas
+        var pincel = pantalla.getContext("2d"); // obtiene el contexto del canvas
+
+        pincel.fillStyle= "grey"; // propiedad para llenado
+        pincel.fillRect(0,0,600,400); // metodo para trazar recta
+       
+
+    function exhibirAlerta(evento){
+        console.log(evento);
+        alert("Usted hizo un clic");
+
+    }
+
+    pantalla.onclick = exhibirAlerta;
+</script>
